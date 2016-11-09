@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    a(href='/logout') Logout
+    h1.
+     Message
+    
+
+    table.table.table-striped
+     thead
+      tr
+       td Name
+       td Email
+       td Message
+       td
+     tbody
+      each user, i in usermessage
+       tr
+        td #{user.name}
+        td #{user.email}
+        td #{user.message}
+        td
+         

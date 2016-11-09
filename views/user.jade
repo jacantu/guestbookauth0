@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    a(href='/logout') Logout
+    h1= title
+    h1 Welcome to GuestBook
+    h2 Sign guestbook please
+    b
+    form#formAddUser(name="adduser",method="post",action="/adduser")
+        input#inputUserName(type="text", placeholder="username", name="username")
+        input#inputUserEmail(type="text", placeholder="useremail", name="useremail")
+        input#inputUserMessage(type="text", placeholder="usermessage", name="usermessage")
+        button#btnSubmit(type="submit") submit
+
+        table.table.table-striped
+          thead
+             tr
+               td Name
+               td Email
+               td Message
+               td
+           tbody
+             each user, i in userlist
+              tr
+                 td
+                   a(href="/#{user._id}/usermessage")= user.name
+                 td
+                   =user.email
+                 td
+                   =user.message
+                 td
+                   a.btn.btn-danger(href="/#{user._id}") Delete

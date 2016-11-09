@@ -1,8 +1,33 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Times New Roman", Helvetica, Arial, sans-serif !important;
+  background-color: lightgreen !important;
+
+}
+h1{
+
+   color: blue !important;
+   font-family: verdana !important;
+   font-size: 200%;
+
+}
+h2{
+
+   color: blue !important;
+   font-family: verdana !important;
+   font-size: 200%;
+
 }
 
 a {
   color: #00B7FF;
+}
+
+table {
+
+  margin-top: 80px;
+}
+
+form{
+  margin-top: 50px;
 }
