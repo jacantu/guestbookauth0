@@ -4,3 +4,4 @@
 * You can see all guests signed
 * Link a message to every guest id
 * AuthO used to authenticate
+* See it live at https://guestbookauth0.herokuapp.com
